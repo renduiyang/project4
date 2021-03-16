@@ -57,6 +57,7 @@ CMAKE_BINARY_DIR = D:\c++\face_object\project4.0\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles\project.dir\all
 all: CMakeFiles\project4.dir\all
 
 .PHONY : all
@@ -67,9 +68,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles\project.dir\clean
 clean: CMakeFiles\project4.dir\clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/project.dir
+
+# All Build rule for target.
+CMakeFiles\project.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\project.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\project.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\c++\face_object\project4.0\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target project"
+.PHONY : CMakeFiles\project.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\project.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\c++\face_object\project4.0\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\project.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\c++\face_object\project4.0\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\project.dir\rule
+
+# Convenience name for target.
+project: CMakeFiles\project.dir\rule
+
+.PHONY : project
+
+# clean rule for target.
+CMakeFiles\project.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\project.dir\clean
+.PHONY : CMakeFiles\project.dir\clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/project4.dir
@@ -78,7 +107,7 @@ clean: CMakeFiles\project4.dir\clean
 CMakeFiles\project4.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\project4.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\project4.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\c++\face_object\project4.0\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target project4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\c++\face_object\project4.0\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target project4"
 .PHONY : CMakeFiles\project4.dir\all
 
 # Build rule for subdir invocation for target.
