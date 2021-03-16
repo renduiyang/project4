@@ -1,0 +1,3 @@
+D:/c++/face_object/projec2.0/cmake-build-debug/CMakeFiles/projec2_0.dir
+D:/c++/face_object/projec2.0/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/c++/face_object/projec2.0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
